@@ -1,0 +1,7 @@
+4 formas para llamar al template con los componentes de vue;
+
+*la forma tipica dentro de la instancia del componenete
+*en un script dentro del archivo que contiene el html
+*en un un elemento template dentro del archivo que contiene el html
+*ingresando el template dentro de la etiqueta del componente declarado. diciendole a este mismo en forma de atributo
+inline-template para que sepa que lo que esta dentro de si es el template del componente.
