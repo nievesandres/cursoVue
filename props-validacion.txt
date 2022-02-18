@@ -1,0 +1,9 @@
+Formas para validar propiedades 
+
+La propidad props recibe un objeto para las siguientes opciones:
+
+*se pueden definir que tipo de datos espera la propiedad
+*se puedo definir como requerido
+*se puede defini mas de un tipo de dato y para decir que acepta cualquier tipo se usa null
+*se puede definir un valor default en caso de que la propiedad obtenida este vacia.
+*se pueden definir como default un funcion 
