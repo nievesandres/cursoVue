@@ -1,0 +1,13 @@
+Ejmplo un alerta
+
+Los slots se utilizan para ingresar contenido dinamico a los componentes
+
+*una forma es poniendo texto dentro de las etiquetas de apertura y cierre al llamar al componente
+*usando el elemento template se puede evitar usar alguna raiz y solo introducir texto
+*solo puede haber un slot anonimo en el template del componente
+* los slot con nombre se definen dentro del template del componente de la siguiente manera
+<slot name="nombredelslot"></slot>
+y se llaman de la siguiente forma:
+<componente>
+    <template slot="nombredelslot"></template>
+</componente>
