@@ -1,0 +1,14 @@
+*La funcion render como propiedad de la instacia exporta de un componente sigle page
+
+ej:
+-Nos permite devolver un elemento html segun una propiedad pasada al componente. Este mismo
+se renderiza al crear la instancia del componente en una componente padre
+
+props: ['tipo']
+render(createElement){
+    return createElement(
+        this.tipo, ->>> este es la propiedad pasada al componente
+        this.$slots.default, este es el slot que renderiza el componente, se pueden usar otros 
+                            entonces deberia cambiarse default por el nombre del slot nuevo
+    )
+}
