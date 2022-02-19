@@ -1,0 +1,1 @@
+* es parecido a estilos scoped pero son mas dinamicos
