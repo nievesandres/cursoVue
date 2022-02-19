@@ -1,0 +1,8 @@
+*
+El hot reloading nos permite modificar nuestro codigo en tiempo real sin afectar lo que estabamos viendo en 
+pantalla, esta herramienta espera la logica de lo cambios y no daña la base de la instancia mientras cambiamos 
+el codigo.
+
+* 
+El scoped style nos permite definir el estilo solo en el ambito del componente en cuestion, esto evitaria que
+el estilo definido en la etiqueta <style> afecte a demas estilo del proyecto.
