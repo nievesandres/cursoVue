@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>formsbinding</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id="app">
+
+      <div class="container mt-5">
+        <form @submit.prevent="enviar()">
+          <div class="form-group">
+            <label for="Nombre">Nombre</label>
+            <input type="text" class="form-control form-control-sm" v-model="formulario.nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="Apellido">Apellido</label>
+            <input type="text" class="form-control form-control-sm" v-model="formulario.apellido" required>
+          </div>
+          <div class="form-group">
+            <label for="Apellido">Consulta</label>
+            <textarea type="text" class="form-control form-control-sm" v-model="formulario.consulta" required></textarea>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" v-model="formulario.cliente" value="Si" required>
+            <label class="form-check-label" for="exampleRadios1">
+              Si soy cliente
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" v-model="formulario.cliente"value="No" required>
+            <label class="form-check-label" for="exampleRadios2">
+              No soy cliente
+            </label>
+          </div>
+          <div class="col-auto my-1">
+            <label>¿Donde nos conocio?</label>
+            <select class="custom-select mr-sm-2" v-model="formulario.conocio" required>
+              <option v-for="val in conocio">{{val}}</option>
+            </select>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" v-model="formulario.acepto">
+            <label class="form-check-label">Aceptol las condiciones</label>
+          </div>
+          <button type="submit" class="btn btn-primary" v-if="formulario.acepto">Submit</button>
+        </form>
+      </div>
+      
+
+    </div>
+    <script src="/dist/build.js"></script>
+  </body>
+</html>
