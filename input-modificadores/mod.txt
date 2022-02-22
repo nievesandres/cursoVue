@@ -1,0 +1,19 @@
+Los modificadores nos sirven para:
+
+el modificador lazy: modifica el evento del v-model para que actualice el modelo con la informacion del input
+al soltar dicho input haciendo click en el resto de la pantalla o saliendo del input. debido a esto este 
+modificador puede acompañar a los otros dos
+
+el modificador number: convierte los datos ingresados en el input en tipo number. normalmente todos los datos 
+ingresados se transforman en un string , pero con este modificador podemos cambiar eso.
+
+el modificador trim: quita los espacios al principio y al final del string ingresado en el input, por defecto
+el modelo asume los espacios que se dejan al final y al principio si queremos evitar este comportamiento
+podemos usar trim.
+
+ej :
+
+<input v-model.lazy="modelo"> 
+<input v-model.number="modelo"> 
+<input v-model.trim="modelo"> 
+<input v-model.lazy.number="modelo"> 
